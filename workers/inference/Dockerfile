@@ -3,7 +3,7 @@
 # fails when they drift.
 FROM ghcr.io/astral-sh/uv:0.11.25 AS uv
 
-FROM docker.io/library/python:3.12.11-slim-bookworm AS base
+FROM docker.io/library/python:3.12.16-slim-bookworm AS base
 
 ENV PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1

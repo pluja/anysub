@@ -7,7 +7,7 @@ packages:
 # security or protocol behaviour. Caret ranges everywhere else. Dev tools that
 # several packages share are declared once here and referenced as "catalog:".
 catalog:
-  "@types/node": ^24.19.2
+  "@types/node": ^26.6.6
   prettier: ^3.10.1
   typescript: ^6.0.3
   vitest: ^5.1.0

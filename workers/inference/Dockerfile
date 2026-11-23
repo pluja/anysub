@@ -1,7 +1,7 @@
 # Dependabot reads these literal tags. Keep the Python tag equal to
 # .python-version and the uv tag equal to the setup-uv version in CI; a test
 # fails when they drift.
-FROM ghcr.io/astral-sh/uv:0.13.8 AS uv
+FROM ghcr.io/astral-sh/uv:0.13.9 AS uv
 
 FROM docker.io/library/python:3.12.16-slim-bookworm AS base
 

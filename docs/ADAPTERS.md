@@ -90,7 +90,7 @@ The built-in `whisperx` adapter is registered through this same entry-point grou
 Build a worker image. Do not install the adapter on the Docker host. Derive it from the published worker image of the Anysub version you run, or from its `-cuda` variant for an NVIDIA GPU. The runtime image does not ship `uv`, so copy it in for the install step only:
 
 ```dockerfile
-FROM ghcr.io/astral-sh/uv:0.13.8 AS uv
+FROM ghcr.io/astral-sh/uv:0.13.9 AS uv
 FROM ghcr.io/pluja/anysub-worker:4.4.0
 
 USER root

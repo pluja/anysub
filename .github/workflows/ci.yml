@@ -58,7 +58,7 @@ jobs:
 
       - uses: astral-sh/setup-uv@1db35dd8eee11c5894872e0b383ae6c406cf738d # v10.4.0
         with:
-          version: 0.13.8 # Matches the uv FROM tag in workers/inference/Dockerfile.
+          version: 0.13.9 # Matches the uv FROM tag in workers/inference/Dockerfile.
           enable-cache: true
           cache-dependency-glob: workers/inference/uv.lock
 
@@ -98,7 +98,7 @@ jobs:
 
       - uses: astral-sh/setup-uv@1db35dd8eee11c5894872e0b383ae6c406cf738d # v10.4.0
         with:
-          version: 0.13.8 # Matches the uv FROM tag in workers/inference/Dockerfile.
+          version: 0.13.9 # Matches the uv FROM tag in workers/inference/Dockerfile.
 
       # The transformers advisories cover loading untrusted models, training and
       # saving models. The worker only loads the models in its manifest and does

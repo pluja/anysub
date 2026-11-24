@@ -61,7 +61,7 @@ Everything runs in containers, so none of these need to be on your host. Each ve
 | Node   | 24.22.3 | `.node-version`, `FROM` in `apps/web/Dockerfile`                     |
 | pnpm   | 11.15.0 | `packageManager` in `package.json`                                   |
 | Python | 3.12.16 | `workers/inference/.python-version`, `FROM` in the worker Dockerfile |
-| uv     | 0.13.8  | `FROM ghcr.io/astral-sh/uv` in the worker Dockerfile, `ci.yml`       |
+| uv     | 0.13.9  | `FROM ghcr.io/astral-sh/uv` in the worker Dockerfile, `ci.yml`       |
 
 Image tags stay literal in the Dockerfiles and Compose files so Dependabot can update them. A test fails when they drift from the version files. Dependabot bumps only the image tag, so finish an image bump PR by updating the paired file the failing version test names.
 

@@ -28,9 +28,9 @@
               <dt class="flex flex-wrap items-center gap-1">
                 {#each shortcut.keys as key, index (key)}
                   {#if index > 0}
-                    <span class="text-xs text-text-subtle" aria-hidden="true"
-                      >+</span
-                    >
+                    <span class="text-xs text-text-subtle" aria-hidden="true">
+                      +
+                    </span>
                   {/if}
                   <Kbd>{key}</Kbd>
                 {/each}

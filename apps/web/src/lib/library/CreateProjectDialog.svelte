@@ -176,9 +176,9 @@
             <Icon name="file" size={18} />
           </span>
           <span id={fileStatusId} class="min-w-0 flex-1">
-            <span class="block truncate text-sm font-medium text-text"
-              >{selectedFile?.name ?? "Choose an audio or video file"}</span
-            >
+            <span class="block truncate text-sm font-medium text-text">
+              {selectedFile?.name ?? "Choose an audio or video file"}
+            </span>
 
             <span
               class={[

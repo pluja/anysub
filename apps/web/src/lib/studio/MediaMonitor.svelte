@@ -145,8 +145,9 @@
           >
             <span
               class="rounded bg-black/75 px-2 py-0.5 whitespace-pre-line box-decoration-clone"
-              >{transport.activeCue.text}</span
             >
+              {transport.activeCue.text}
+            </span>
           </p>
         {/if}
       </div>
@@ -175,9 +176,9 @@
           }}
         ></audio>
         <p class="min-h-14 text-center text-base font-semibold text-text">
-          <span class="whitespace-pre-line"
-            >{transport.activeCue?.text ?? ""}</span
-          >
+          <span class="whitespace-pre-line">
+            {transport.activeCue?.text ?? ""}
+          </span>
         </p>
       </div>
     {/if}

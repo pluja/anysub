@@ -196,9 +196,9 @@
   <div class="grid content-start justify-items-start gap-2 px-5 py-6">
     <h3 class="text-sm font-semibold text-text">This track has no cues</h3>
     <p class="text-sm text-text-muted">Insert a cue to continue editing.</p>
-    <Button size="sm" onclick={() => editor.insertAfterSelected()}
-      >Insert first cue</Button
-    >
+    <Button size="sm" onclick={() => editor.insertAfterSelected()}>
+      Insert first cue
+    </Button>
   </div>
 {:else}
   <p id={timecodeHintId} class="sr-only">
@@ -257,9 +257,9 @@
             {@render timeField(cue, index, "start_us", selected)}
             <span class="text-text-subtle" aria-hidden="true">→</span>
             {@render timeField(cue, index, "end_us", selected)}
-            <span class="ml-auto pl-1 text-text-subtle"
-              >{((cue.end_us - cue.start_us) / 1_000_000).toFixed(2)}s</span
-            >
+            <span class="ml-auto pl-1 text-text-subtle">
+              {((cue.end_us - cue.start_us) / 1_000_000).toFixed(2)}s
+            </span>
           </div>
           <!-- The matches are drawn behind the field, which turns transparent:
                a textarea cannot mark parts of its own text. Both share the
@@ -278,8 +278,10 @@
                         part.match === finder.current
                           ? "bg-highlight outline-2 outline-accent"
                           : "bg-highlight",
-                      ]}>{part.text}</mark
-                    >{:else}{part.text}{/if}{/each}
+                      ]}
+                    >
+                      {part.text}
+                    </mark>{:else}{part.text}{/if}{/each}
               </div>
             {/if}
             <textarea

@@ -49,15 +49,17 @@
       <a
         href="#start"
         class="font-medium text-text-muted hover:text-text focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus"
-        >Quick start</a
       >
+        Quick start
+      </a>
       {#each tags as tag (tag)}
         <div class="grid gap-1.5">
           <a
             href="#tag-{tag}"
             class="font-medium text-text hover:text-accent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus"
-            >{tag}</a
           >
+            {tag}
+          </a>
           <ul class="grid gap-1 border-l border-border pl-3">
             {#each data.reference.operations.filter((operation) => operation.tag === tag) as operation (operation.id)}
               <li>
@@ -67,8 +69,9 @@
                 >
                   <span
                     class="w-11 shrink-0 font-mono text-[0.7rem] font-semibold"
-                    >{operation.method}</span
                   >
+                    {operation.method}
+                  </span>
                   <span class="min-w-0">{operation.summary}</span>
                 </a>
               </li>
@@ -79,8 +82,9 @@
       <a
         href="#schemas"
         class="font-medium text-text-muted hover:text-text focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus"
-        >Data shapes</a
       >
+        Data shapes
+      </a>
     </div>
   </nav>
 
@@ -126,8 +130,10 @@
           >
             <span
               class="grid size-7 place-items-center rounded-full bg-accent-soft text-sm font-semibold text-accent"
-              aria-hidden="true">{index + 1}</span
+              aria-hidden="true"
             >
+              {index + 1}
+            </span>
             <div class="grid min-w-0 gap-2">
               <div>
                 <h3 class="text-sm font-semibold text-text">{step.title}</h3>
@@ -150,18 +156,18 @@
         <div class="grid gap-1 p-4 sm:grid-cols-[9rem_minmax(0,1fr)] sm:gap-4">
           <dt class="font-medium text-text">Tokens</dt>
           <dd class="text-text-muted">
-            Send <code class={INLINE_CODE}
-              >Authorization: Bearer anysub_pat_…</code
-            >. A token acts as you, in every workspace you belong to. Read-only
-            tokens can only look.
+            Send <code class={INLINE_CODE}>
+              Authorization: Bearer anysub_pat_…
+            </code>. A token acts as you, in every workspace you belong to.
+            Read-only tokens can only look.
           </dd>
         </div>
         <div class="grid gap-1 p-4 sm:grid-cols-[9rem_minmax(0,1fr)] sm:gap-4">
           <dt class="font-medium text-text">Errors</dt>
           <dd class="text-text-muted">
-            Always <code class={INLINE_CODE}
-              >{"{"}"error": {"{"}"code", "message"{"}"}{"}"}</code
-            >, with a fitting HTTP status. The message is safe to show.
+            Always <code class={INLINE_CODE}>
+              {"{"}"error": {"{"}"code", "message"{"}"}{"}"}
+            </code>, with a fitting HTTP status. The message is safe to show.
           </dd>
         </div>
         <div class="grid gap-1 p-4 sm:grid-cols-[9rem_minmax(0,1fr)] sm:gap-4">
@@ -177,8 +183,10 @@
             Uploading in one request works up to the server's request limit.
             Beyond that, use the resumable <a
               class="font-medium text-accent underline-offset-2 hover:underline"
-              href="https://tus.io">tus</a
+              href="https://tus.io"
             >
+              tus
+            </a>
             upload at <code class={INLINE_CODE}>/api/uploads</code> with
             metadata
             <code class={INLINE_CODE}>filename</code> and

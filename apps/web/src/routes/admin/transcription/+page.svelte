@@ -52,8 +52,9 @@
       <a
         href="/admin/providers"
         class="font-medium text-accent underline-offset-2 hover:underline"
-        >External providers</a
-      >.
+      >
+        External providers
+      </a>.
     </p>
   </SettingsCard>
 </div>

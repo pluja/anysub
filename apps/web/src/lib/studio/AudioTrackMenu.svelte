@@ -62,8 +62,9 @@
         <Icon name="audio-lines" size={16} />
       </span>
       <span class="sr-only">Audio:</span>
-      <span class="truncate @max-xl:sr-only">{audioTrackName(wantedTrack)}</span
-      >
+      <span class="truncate @max-xl:sr-only">
+        {audioTrackName(wantedTrack)}
+      </span>
       {#if wantedState.kind !== "ready"}
         <span class="shrink-0 text-text-muted @max-xl:sr-only">
           · {stateLabel(wantedState)}

@@ -78,8 +78,9 @@
         <a
           href="/admin/providers"
           class="font-medium text-accent underline-offset-2 hover:underline"
-          >External providers</a
-        >, then choose one of its chat models here.
+        >
+          External providers
+        </a>, then choose one of its chat models here.
       </p>
     {:else}
       <form

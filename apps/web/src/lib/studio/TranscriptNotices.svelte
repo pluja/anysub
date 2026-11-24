@@ -128,8 +128,10 @@
         <button
           type="button"
           class="font-medium text-accent underline-offset-2 hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus"
-          onclick={() => onopentrack(source.id)}>{sourceName}</button
+          onclick={() => onopentrack(source.id)}
         >
+          {sourceName}
+        </button>
       {:else}
         {languageName(origin.sourceLanguage)}
       {/if}

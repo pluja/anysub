@@ -101,8 +101,9 @@
         {/if}
       {/snippet}
       {#snippet option(model)}
-        <code class="min-w-0 truncate font-mono text-sm text-text">{model}</code
-        >
+        <code class="min-w-0 truncate font-mono text-sm text-text">
+          {model}
+        </code>
       {/snippet}
     </Picker>
     {#if error}

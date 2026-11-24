@@ -131,9 +131,9 @@
               <span class="text-sm font-medium text-text">
                 {API_TOKEN_SCOPE_LABELS[scope]}
               </span>
-              <span class="text-xs text-text-muted"
-                >{ACCESS_DETAILS[scope]}</span
-              >
+              <span class="text-xs text-text-muted">
+                {ACCESS_DETAILS[scope]}
+              </span>
             </span>
           </label>
         {/each}

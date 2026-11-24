@@ -137,8 +137,10 @@
             class="font-mono tabular-nums max-sm:px-1.5 max-sm:text-xs"
             tabindex={toolbarFocus.tabIndex(index)}
             disabled={action.disabled}
-            onclick={action.run}>{action.label}</Button
+            onclick={action.run}
           >
+            {action.label}
+          </Button>
         {/if}
       {/each}
     </div>
@@ -161,20 +163,21 @@
     {#if selectedCue}
       {@const cps = charactersPerSecond(selectedCue)}
       <span class="ml-auto shrink-0 tabular-nums">
-        <span class="hidden @min-[24rem]:inline"
-          >Cue {editor.selectedCueIndex + 1} ·
+        <span class="hidden @min-[24rem]:inline">
+          Cue {editor.selectedCueIndex + 1} ·
         </span>
         <span
           class={selectedCue.text.length > editor.maxLineLength
             ? "text-warning"
             : undefined}
-          >{selectedCue.text.length}/{editor.maxLineLength} chars</span
-        >{#if cps !== null}{` · ${cps.toFixed(1)} CPS`}{/if}
+        >
+          {selectedCue.text.length}/{editor.maxLineLength} chars
+        </span>{#if cps !== null}{` · ${cps.toFixed(1)} CPS`}{/if}
       </span>
     {/if}
-    <span class="hidden min-w-0 shrink-[999] truncate @min-[34rem]:block"
-      >{shortcutLabel("save")} to save · {shortcutLabel("undo")} to undo</span
-    >
+    <span class="hidden min-w-0 shrink-[999] truncate @min-[34rem]:block">
+      {shortcutLabel("save")} to save · {shortcutLabel("undo")} to undo
+    </span>
   {/if}
 </div>
 <!-- The save status itself changes with every edit, so only these messages are
@@ -190,9 +193,9 @@
     >
       <span class="min-w-0 py-1">{editor.autosave.message}</span>
       {#if saveState === "error"}
-        <Button size="sm" onclick={() => void editor.autosave.flush()}
-          >Retry</Button
-        >
+        <Button size="sm" onclick={() => void editor.autosave.flush()}>
+          Retry
+        </Button>
       {:else if saveState === "conflict"}
         <Button size="sm" onclick={() => location.reload()}>Reload</Button>
       {/if}

@@ -28,8 +28,9 @@
   <div class="flex min-w-0 items-center gap-3">
     <strong
       class="text-[0.6875rem] font-semibold tracking-wide text-text-muted uppercase"
-      >Timeline</strong
     >
+      Timeline
+    </strong>
     <span class="font-mono text-xs text-text-muted tabular-nums max-sm:hidden">
       <span class="sr-only">Playback time</span>
       {formatEditorTime(playbackUs)}
@@ -62,8 +63,10 @@
     />
     <span
       class="w-11 text-center font-mono text-xs text-text-muted tabular-nums max-sm:hidden"
-      aria-live="polite">{Math.round(zoom * 100)}%</span
+      aria-live="polite"
     >
+      {Math.round(zoom * 100)}%
+    </span>
     <IconButton
       label="Zoom in"
       icon="zoom-in"

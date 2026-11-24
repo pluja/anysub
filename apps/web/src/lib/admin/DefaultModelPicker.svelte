@@ -144,8 +144,9 @@
         <a
           href="#local-models"
           class="font-medium text-accent underline-offset-2 hover:underline"
-          >Download it now</a
-        >.
+        >
+          Download it now
+        </a>.
       </span>
     </p>
   {/if}

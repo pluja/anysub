@@ -64,8 +64,9 @@
         <a
           href="/api"
           class="font-medium whitespace-nowrap text-accent underline-offset-2 hover:underline"
-          >API reference</a
         >
+          API reference
+        </a>
       </p>
     </div>
     <Button variant="primary" size="sm" onclick={() => (creating = true)}>

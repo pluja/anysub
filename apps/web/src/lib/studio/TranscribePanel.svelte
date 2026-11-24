@@ -184,11 +184,12 @@
             class="flex cursor-pointer list-none items-center gap-3 rounded-lg px-3.5 py-3 transition-colors duration-150 group-open:rounded-b-none hover:bg-surface-sunken focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus motion-reduce:transition-none [&::-webkit-details-marker]:hidden"
           >
             <span class="grid min-w-0 flex-1 gap-0.5">
-              <span class="text-sm font-medium text-text">Advanced options</span
-              >
-              <span class="text-xs text-text-muted"
-                >{advancedOptionsSummary}</span
-              >
+              <span class="text-sm font-medium text-text">
+                Advanced options
+              </span>
+              <span class="text-xs text-text-muted">
+                {advancedOptionsSummary}
+              </span>
             </span>
             <span
               class="grid size-4 shrink-0 place-items-center text-text-muted transition-transform duration-150 group-open:rotate-180 motion-reduce:transition-none"

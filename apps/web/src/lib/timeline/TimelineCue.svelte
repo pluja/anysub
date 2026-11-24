@@ -257,16 +257,17 @@
       class={[
         "absolute top-[3px] left-1.5 font-mono text-[0.6875rem] leading-none font-semibold tabular-nums",
         highlighted ? "text-text" : "text-text-muted",
-      ]}>{number}</span
+      ]}
     >
+      {number}
+    </span>
     <span
       class="block truncate px-1.5 pt-[17px] text-[0.6875rem] leading-[1.3] font-medium"
-      >{singleLine(cue.text)}</span
-    ><span class="sr-only"
-      >, {formatEditorTime(timing.start_us)} to {formatEditorTime(
-        timing.end_us,
-      )}</span
     >
+      {singleLine(cue.text)}
+    </span><span class="sr-only">
+      , {formatEditorTime(timing.start_us)} to {formatEditorTime(timing.end_us)}
+    </span>
   </button>
   <button
     bind:this={startHandle}

@@ -112,8 +112,9 @@
           <a
             href="/admin/translation"
             class="font-medium text-accent underline-offset-2 hover:underline"
-            >Administration, Translation</a
-          >.
+          >
+            Administration, Translation
+          </a>.
         </p>
       {:else}
         <p>Ask an administrator to set it up.</p>

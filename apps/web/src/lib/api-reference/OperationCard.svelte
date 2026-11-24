@@ -24,8 +24,9 @@
   <header class="grid gap-1.5">
     <div class="flex flex-wrap items-center gap-2">
       <Badge tone={METHOD_TONES[operation.method]}>{operation.method}</Badge>
-      <code class="font-mono text-sm break-all text-text">{operation.path}</code
-      >
+      <code class="font-mono text-sm break-all text-text">
+        {operation.path}
+      </code>
       <span class="ml-auto">
         <Badge tone="neutral">
           {operation.scope === "write" ? "Read and write token" : "Any token"}
@@ -56,8 +57,9 @@
             </dt>
             <dd class="text-text-muted">
               <code class="font-mono text-xs">{parameter.type}</code>
-              {#if parameter.description}<span>. {parameter.description}</span
-                >{/if}
+              {#if parameter.description}<span>
+                  . {parameter.description}
+                </span>{/if}
             </dd>
           </div>
         {/each}
@@ -76,8 +78,10 @@
         {#if operation.body.schema}
           See <a
             class="font-medium text-accent underline-offset-2 hover:underline"
-            href="#schema-{operation.body.schema}">{operation.body.schema}</a
-          >.
+            href="#schema-{operation.body.schema}"
+          >
+            {operation.body.schema}
+          </a>.
         {/if}
       </p>
     </div>
@@ -95,8 +99,10 @@
           {#if response.schema}
             <a
               class="font-medium text-accent underline-offset-2 hover:underline"
-              href="#schema-{response.schema}">{response.schema}</a
+              href="#schema-{response.schema}"
             >
+              {response.schema}
+            </a>
           {/if}
         </li>
       {/each}

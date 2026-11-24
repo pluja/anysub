@@ -179,8 +179,10 @@
       <kbd
         class="pointer-events-none absolute top-1/2 right-3 -translate-y-1/2 rounded border border-border px-1.5 font-mono text-xs text-text-subtle max-sm:hidden"
         title="Press / to search"
-        aria-hidden="true">/</kbd
+        aria-hidden="true"
       >
+        /
+      </kbd>
     {/if}
   </form>
 
